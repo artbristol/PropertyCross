@@ -67,7 +67,7 @@ public class PropertyFinderPersistentState {
 	
 	public boolean isPropertyFavourited(Property p) {
 		for(Property property : favourites) {
-			if(p.getGuid() == property.getGuid()) {
+			if(p.getGuid().equals(property.getGuid())) {
 				return true;
 			}
 		}		
@@ -88,7 +88,7 @@ public class PropertyFinderPersistentState {
 	
 	private Property getMatchingPropertyFor(Property p) {
 		for (Property property : favourites) {
-			if (p.getGuid() == property.getGuid()) {
+			if (p.getGuid().equals(property.getGuid())) {
 				return property;
 			}
 		}

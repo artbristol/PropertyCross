@@ -135,7 +135,7 @@ public class PropertyFinderPresenter {
 						if(result instanceof PropertyListingsResult) {
 							PropertyListingsResult propertiesResult = (PropertyListingsResult) result;
 							
-							if(propertiesResult.getData().size() == 0) {
+							if(propertiesResult.getData().isEmpty()) {
 								view.setMessage("There were no properties found for the given location.");
 							}
 							else {
